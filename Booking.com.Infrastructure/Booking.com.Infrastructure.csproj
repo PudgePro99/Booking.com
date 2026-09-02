@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Booking.com.Application\Booking.com.Application.csproj" />
     <ProjectReference Include="..\Booking.com.Domain\Booking.com.Domain.csproj" />
   </ItemGroup>
 
