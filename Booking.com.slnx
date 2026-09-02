@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="Booking.com.Application/Booking.com.Application.csproj" Id="f1e1e02e-8d9f-40af-8bb6-cad41e81e740" />
+  <Project Path="Booking.com.Domain/Booking.com.Domain.csproj" Id="e7488f64-56a0-488f-aebe-8ba926bf315e" />
+  <Project Path="Booking.com.Infrastructure/Booking.com.Infrastructure.csproj" Id="f8775f7b-8fae-41c9-b84a-9fd189f9d18a" />
   <Project Path="Booking.com/Booking.com.csproj" />
 </Solution>
