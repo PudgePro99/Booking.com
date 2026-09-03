@@ -6,7 +6,7 @@ using Booking.com.Domain.Enums;
 
 namespace Booking.com.Application.DTOs.Rooms
 {
-    internal class CreateRoomDto
+    public class CreateRoomDto
     {
         public int Number {  get; set; }
         public RoomClass Class { get; set; }
