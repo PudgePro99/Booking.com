@@ -8,8 +8,8 @@ namespace Booking.com.Application.Interfaces
     public interface IRoomRepository
     {
         Task<Room?> GetByIdAsync(Guid Id);
-        Task<List<Room>> GetAllAsync(Guid id);
-        Task AddAsync (Room room);
-        Task DeleteAsync(Room room);
+        Task<List<Room>> GetAllAsync();
+        void Add(Room room);
+        void Delete(Room room);
     }
 }

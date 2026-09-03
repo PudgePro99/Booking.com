@@ -11,7 +11,7 @@ namespace Booking.com.Infrastructure.Repositories
     public class RoomRepository : IRoomRepository
     {
         private readonly AppDbContext _dbContext;
-        public RoomRepository(AppDbContext _dbContext)
+        public RoomRepository(AppDbContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -19,5 +19,18 @@ namespace Booking.com.Infrastructure.Repositories
         {
             return await _dbContext.Rooms.FirstOrDefaultAsync(room => room.Id == id);
         }
+        public  async Task<List<Room>> GetAllAsync()
+        {
+            return await _dbContext.Rooms.ToListAsync();
+        }
+        public void Add(Room room)
+        {
+            _dbContext.Rooms.Add(room);
+        }
+        public void Delete(Room room)
+        {
+            _dbContext.Rooms.Remove(room);
+        }
+
     }
 }
