@@ -2,6 +2,8 @@
 using Booking.com.Application.Services;
 using Booking.com.Infrastructure.Repositories;
 using Booking.com.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IRoomRepository, RoomRepository>();
 builder.Services.AddScoped<IRoomService, RoomService>();
 builder.Services.AddScoped<ISaveChanges, SaveChanges>();
+builder.Services.AddDbContext<AppDbContext>
+    (options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddEndpointsApiExplorer();
 //builder.Services.AddSwaggerGen();
