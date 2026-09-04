@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Booking.com.Domain\Booking.com.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DTOs\Bookings\" />
-  </ItemGroup>
-
 </Project>
