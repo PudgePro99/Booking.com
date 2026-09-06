@@ -15,8 +15,14 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4dc90ae7-a616-4a6e-8ee8-0d41e5aae1e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Booking.com/Controllers/RoomsController.cs" afterDir="false" />
+    <list default="true" id="4dc90ae7-a616-4a6e-8ee8-0d41e5aae1e3" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/Booking.com.Application/DTOs/Auth/LoginDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Booking.com.Application/DTOs/Auth/LoginResponseDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Booking.com.Application/Interfaces/IAuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Booking.com.Application/Services/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Booking.com/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Booking.com/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking.com.Application/Booking.com.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Booking.com.Application/Booking.com.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking.com.Domain/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Booking.com.Domain/Entities/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Booking.com/Booking.com.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Booking.com/Booking.com.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Booking.com/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Booking.com/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Booking.com/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Booking.com/appsettings.json" afterDir="false" />
@@ -46,7 +52,11 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Booking.com.Application/DTOs/Auth/LoginDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Booking.com.Application/DTOs/Auth/LoginResponseDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Booking.com.Application/Interfaces/IAuthService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Booking.com.Application/Interfaces/ISaveChanges.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Booking.com.Application/Services/AuthService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Booking.com.Infrastructure/Data/SaveChanges.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Booking.com/Controllers/RoomsController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -57,61 +67,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000092249066" />
-      <entry key="S2" value="1.0239026864440008" />
-      <entry key="S5" value="1.5090301568976263" />
-      <entry key="S10" value="2.4237567171506074" />
-      <entry key="S30" value="3.870097512539901" />
-      <entry key="S60" value="4.746542441256424" />
-      <entry key="M2" value="6.067343065896424" />
-      <entry key="M5" value="13.54895152156146" />
-      <entry key="M10" value="30.623186424854143" />
-      <entry key="M15" value="43.80405509339847" />
-      <entry key="M30" value="70.8432982879124" />
-      <entry key="H1" value="112.93827038611603" />
-      <entry key="H2" value="172.11191299181564" />
-      <entry key="H4" value="235.08434482504316" />
-      <entry key="D1" value="331.3882385953219" />
-      <entry key="W1" value="354.8290469899279" />
+      <entry key="MS100" value="1.0000023975627412" />
+      <entry key="MS500" value="1.075154328056136" />
+      <entry key="S2" value="1.5235865708237497" />
+      <entry key="S5" value="1.771961070668422" />
+      <entry key="S10" value="1.8786790742900723" />
+      <entry key="S30" value="2.3055864283165275" />
+      <entry key="S60" value="5.617115337463769" />
+      <entry key="M2" value="14.403396069300872" />
+      <entry key="M5" value="28.39883900509951" />
+      <entry key="M10" value="36.06518223203775" />
+      <entry key="M15" value="39.15600887818812" />
+      <entry key="M30" value="44.38696575391043" />
+      <entry key="H1" value="64.66601645638832" />
+      <entry key="H2" value="125.47635956640316" />
+      <entry key="H4" value="221.33491661908909" />
+      <entry key="D1" value="413.38045366136697" />
+      <entry key="W1" value="467.16405531969247" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="3.2379152829034277E-13" />
-      <entry key="MS500" value="0.0032439009683369754" />
-      <entry key="S2" value="0.357981433932102" />
-      <entry key="S5" value="1.3173899002549379" />
-      <entry key="S10" value="2.2309516468384043" />
-      <entry key="S30" value="3.2713740860692906" />
-      <entry key="S60" value="3.614623254684504" />
-      <entry key="M2" value="3.814610874394246" />
-      <entry key="M5" value="4.232895259545603" />
-      <entry key="M10" value="5.249262144763603" />
-      <entry key="M15" value="6.29726791527155" />
-      <entry key="M30" value="9.678314842885774" />
-      <entry key="H1" value="17.372268366184493" />
-      <entry key="H2" value="28.80500908196751" />
-      <entry key="H4" value="40.11063922578699" />
-      <entry key="D1" value="55.77528244218872" />
-      <entry key="W1" value="59.36800756639803" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="2.212581982328072E-115" />
+      <entry key="S2" value="2.172418438962424E-29" />
+      <entry key="S5" value="3.6881220794253216E-12" />
+      <entry key="S10" value="2.3767278558615786E-6" />
+      <entry key="S30" value="0.0225959901543367" />
+      <entry key="S60" value="0.2483490748116766" />
+      <entry key="M2" value="0.8512300336377925" />
+      <entry key="M5" value="1.8061038061536432" />
+      <entry key="M10" value="2.3348820202932488" />
+      <entry key="M15" value="2.587225037070644" />
+      <entry key="M30" value="3.3439580990886033" />
+      <entry key="H1" value="6.926084475259565" />
+      <entry key="H2" value="17.826766794572304" />
+      <entry key="H4" value="34.849934360705454" />
+      <entry key="D1" value="67.54244555413712" />
+      <entry key="W1" value="76.39373486094237" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0037731887848626937" />
-      <entry key="MS500" value="0.32804052432944036" />
-      <entry key="S2" value="0.969368363695642" />
-      <entry key="S5" value="2.402360505379063" />
-      <entry key="S10" value="4.309824194747967" />
-      <entry key="S30" value="6.973051420814925" />
-      <entry key="S60" value="8.263254151251191" />
-      <entry key="M2" value="9.824599056436204" />
-      <entry key="M5" value="17.752452468457367" />
-      <entry key="M10" value="35.85144405543368" />
-      <entry key="M15" value="50.08303800725562" />
-      <entry key="M30" value="80.50551634615876" />
-      <entry key="H1" value="130.2944520047213" />
-      <entry key="H2" value="200.90247284157928" />
-      <entry key="H4" value="275.1842444512232" />
-      <entry key="D1" value="387.1608303564566" />
-      <entry key="W1" value="414.196638877548" />
+      <entry key="MS100" value="0.9395249100185414" />
+      <entry key="MS500" value="1.061208535795059" />
+      <entry key="S2" value="1.5177574117244865" />
+      <entry key="S5" value="1.769110603686673" />
+      <entry key="S10" value="1.8771437233769377" />
+      <entry key="S30" value="2.3250041130134904" />
+      <entry key="S60" value="5.851086394589524" />
+      <entry key="M2" value="15.230524511359313" />
+      <entry key="M5" value="30.1846240827364" />
+      <entry key="M10" value="38.38694913537834" />
+      <entry key="M15" value="41.73353540010039" />
+      <entry key="M30" value="47.72445603281659" />
+      <entry key="H1" value="71.58479358111722" />
+      <entry key="H2" value="143.2932988403732" />
+      <entry key="H4" value="256.17494592356957" />
+      <entry key="D1" value="480.9195445017868" />
+      <entry key="W1" value="543.557242105215" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -122,35 +132,38 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3ImbYVeThaQLTVcnC4EWZT4woSa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.language.and.region",
-    "Профиль настроек запуска .NET.Booking.com: http.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.language.and.region&quot;,
+    &quot;Профиль настроек запуска .NET.Booking.com: http.executor&quot;: &quot;Run&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Профиль настроек запуска .NET.Booking.com: http">
     <configuration name="Booking.com: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Booking.com/Booking.com.csproj" />

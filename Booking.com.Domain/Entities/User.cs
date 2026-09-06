@@ -10,6 +10,6 @@ namespace Booking.com.Domain.Entities
         public string Name { get; set; } = String.Empty;
         public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
 
-        public UserRole Role { get; set; };
+        public UserRole Role { get; set; }
     }
 }
