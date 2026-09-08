@@ -15,17 +15,8 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4dc90ae7-a616-4a6e-8ee8-0d41e5aae1e3" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/Booking.com.Application/DTOs/Auth/LoginDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Booking.com.Application/DTOs/Auth/LoginResponseDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Booking.com.Application/Interfaces/IAuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Booking.com.Application/Services/AuthService.cs" afterDir="false" />
+    <list default="true" id="4dc90ae7-a616-4a6e-8ee8-0d41e5aae1e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Booking.com/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Booking.com/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Booking.com.Application/Booking.com.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Booking.com.Application/Booking.com.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Booking.com.Domain/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Booking.com.Domain/Entities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Booking.com/Booking.com.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Booking.com/Booking.com.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Booking.com/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Booking.com/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Booking.com/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Booking.com/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
