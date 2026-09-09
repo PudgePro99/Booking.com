@@ -1,11 +1,13 @@
 ﻿using Booking.com.Application.Interfaces;
 using Booking.com.Application.Services;
-using Booking.com.Infrastructure.Repositories;
 using Booking.com.Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
+using Booking.com.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi;
 using System.Text;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,7 +31,26 @@ builder.Services.AddDbContext<AppDbContext>
     (options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 //swagger
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Введите JWT токен"
+    });
+
+    options.AddSecurityRequirement(document =>
+        new OpenApiSecurityRequirement
+        {
+            [
+                new OpenApiSecuritySchemeReference("Bearer", document)
+            ] = []
+        });
+});
 
 //авторизация jwt
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -56,6 +77,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 var app = builder.Build();
+//seeder
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider
+        .GetRequiredService<AppDbContext>();
+
+    await AdminSeeder.SeedAsync(dbContext);
+}
 
 if (app.Environment.IsDevelopment())
 {

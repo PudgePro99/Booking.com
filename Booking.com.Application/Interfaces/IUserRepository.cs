@@ -9,6 +9,7 @@ namespace Booking.com.Application.Interfaces
     public interface IUserRepository
     {
         Task<User?> GetByIdAsync(Guid id);
+        Task<User?> GetByNameAsync(string name);
         Task<List<User>> GetAllAsync();
         void Add(User user);
     }

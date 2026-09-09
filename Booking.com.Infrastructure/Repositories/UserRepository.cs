@@ -28,6 +28,11 @@ namespace Booking.com.Infrastructure.Repositories
         {
             _dbContext.Users.Add(user);
         }
+        
+        public async Task<User?> GetByNameAsync(string name)
+        {
+            return await _dbContext.Users.FirstOrDefaultAsync(user => user.Name == name);
+        }
 
     }
 }

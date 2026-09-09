@@ -1,5 +1,6 @@
 ﻿using Booking.com.Application.DTOs.Rooms;
 using Booking.com.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Booking.com.Controllers;
@@ -23,6 +24,7 @@ public class RoomsController : ControllerBase
         return Ok(rooms);
     }
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     public async Task<ActionResult<RoomDto>>
         Create(CreateRoomDto dto)
     {
@@ -39,6 +41,7 @@ public class RoomsController : ControllerBase
         return Ok(room);
     }
     [HttpDelete("{id:guid}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(Guid id)
     {
         var deleted = await _roomService.DeleteAsync(id);
